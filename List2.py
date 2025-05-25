@@ -23,3 +23,9 @@ def split_min_diff(lst):
 
     return best_pair
   
+lst = [7, 3, 2, 5, 8, 1]
+left, right = split_min_diff(lst)
+print("Original list:", lst)
+print("Sublist 1:", left, "Sum:", sum(left))
+print("Sublist 2:", right, "Sum:", sum(right))
+print("Sum difference:", abs(sum(left) - sum(right)))
